@@ -1,3 +1,5 @@
+# overwrite setup_ffmpeg.sh with the clean script
+cat > setup_ffmpeg.sh <<'EOF'
 #!/usr/bin/env bash
 set -euo pipefail
 echo "==> setup_ffmpeg.sh started"
@@ -35,3 +37,4 @@ fi
 
 rm -rf "$TMP"
 echo "==> setup_ffmpeg.sh finished"
+EOF
